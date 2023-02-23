@@ -1,16 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnInit } from '@angular/core';
+/*
+DoCheck,
+AfterContentInit,
+AfterContentChecked,
+AfterViewInit,
+AfterViewChecked
+
+*/
+
+
 
 @Component({
   selector: 'app-root',
-  template: `<router-outlet></router-outlet>`
+  template: `
+  <app-data-binding></app-data-binding>
+  <router-outlet></router-outlet>`
 })
 export class AppComponent implements OnInit {
+
+  public destruir: boolean = true;
+
   constructor() { }
 
-  ngOnInit(): void {
-    setTimeout(() => {
-      console.log(1)
-    }, 5000)
-  }
+
+  ngOnInit(): void { }
+
 
 }
