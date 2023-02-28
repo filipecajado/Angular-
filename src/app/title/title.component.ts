@@ -25,5 +25,4 @@ export class TitleComponent implements OnInit, OnChanges, OnDestroy {
 
   }
 
-
 }
